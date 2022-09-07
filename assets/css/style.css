@@ -1,4 +1,53 @@
+/* Google Font url */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap');
+
+/* General Style */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header Style */
 .brand-logo{
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 900;
+}
+
+/* Banner Style */
+.shadow-background{
+    position: relative;
+}
+
+.shadow-background::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .7;
+}
+
+.shadow-background img{
+    height: 700;
+}
+
+.caption-z-index{
+    z-index: 1;
+    bottom: 10rem;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .caption-z-index{
+        bottom: 1.25rem;
+    }    
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .caption-z-index{
+        bottom: 1.25rem;
+    }
+    .caption-z-index p{
+        font-size: 14px;
+    }    
 }
