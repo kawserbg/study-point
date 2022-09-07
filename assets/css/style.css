@@ -28,10 +28,6 @@ body{
     opacity: .7;
 }
 
-.shadow-background img{
-    height: 700;
-}
-
 .caption-z-index{
     z-index: 1;
     bottom: 10rem;
@@ -50,7 +46,7 @@ body{
 .course-content {
     display: flex;
     flex-direction: column;
-    height: 250px;
+    height: 270px;
     border: 1px solid #ddd;
     border-left: 0px solid;
     border-radius: 5px;
@@ -71,8 +67,8 @@ body{
 }
 
 .footer-area a i{
-    width: 40px;
-    height: 40px;
+    width: 75px;
+    height: 75px;
     margin-top: 10px;
 }
 
