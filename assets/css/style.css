@@ -37,10 +37,34 @@ body{
     bottom: 10rem;
 }
 
+/* Popular Courses Style */
+.single-course{
+    display: flex;    
+}
+
+.single-course img{
+    z-index: 1;
+    margin: 0px;
+}
+
+.course-content {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    border: 1px solid #ddd;
+    border-left: 0px solid;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-top: 15px;
+    margin-left: -6px;
+}
+
+/* Responsive Style  */
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .caption-z-index{
         bottom: 1.25rem;
-    }    
+    } 
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -49,5 +73,18 @@ body{
     }
     .caption-z-index p{
         font-size: 14px;
-    }    
+    }  
+    .single-course{
+        flex-direction: column;   
+    } 
+    .single-course img {
+        margin: -3px;
+    }
+    .course-content {
+        border: 1px solid #ddd;
+        border-top: 0px solid;
+        border-radius: 5px;
+        padding: 15px;
+        margin-top: -6px;
+    } 
 }
